@@ -18,6 +18,8 @@ import networkx as nx
 # Import dwave_networkx for d-wave graph tools/functions
 import dwave_networkx as dnx
 
+from dwave.samplers import SimulatedAnnealingSampler
+
 # Import matplotlib.pyplot to draw graphs on screen
 import matplotlib
 matplotlib.use("agg")
@@ -28,8 +30,9 @@ def set_sampler():
     '''Returns a simulated annealing sampler'''
     
     ## TODO:  Import packages and add sampler here
+    sampler = SimulatedAnnealingSampler()
 
-    return 
+    return sampler
 
 def create_graph():
     # Create empty graph
